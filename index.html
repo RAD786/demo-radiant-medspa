@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radiant Med Spa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#top">Radiant Med Spa</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          </ul>
+          <a class="btn btn-primary ms-lg-3" href="tel:+15551234567">Call (555) 123-4567</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <span class="badge text-bg-light border mb-3">AI Front Desk Demo</span>
+              <h1 class="display-5 fw-semibold">
+                Radiant Med Spa
+                <span class="d-block text-muted">Clear skin, calm mind, confident glow.</span>
+              </h1>
+              <p class="lead text-secondary">
+                Explore a simple, elegant med spa experience with instant answers, effortless booking,
+                and a friendly AI front desk from RevNexSystems.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary btn-lg" href="#booking">Book a Consultation</a>
+                <button class="btn btn-outline-secondary btn-lg" id="chatTrigger" type="button">
+                  Try the AI Front Desk
+                </button>
+              </div>
+              <div class="mt-4 text-secondary">
+                Call us anytime: <a class="link-underline link-underline-opacity-0" href="tel:+15551234567">(555) 123-4567</a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="hero-card">
+                <h5 class="fw-semibold">Today’s Spotlight</h5>
+                <p class="text-secondary mb-3">
+                  Hydrafacial + LED glow boost. Gentle, fast, and event-ready.
+                </p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="text-muted">From $149</span>
+                  <a class="btn btn-sm btn-outline-primary" href="#booking">Reserve</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light" id="services">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+            <h2 class="h3 fw-semibold m-0">Signature Services</h2>
+            <span class="text-secondary">Safe. Modern. Results-driven.</span>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="service-card h-100">
+                <h5>Injectables</h5>
+                <p class="text-secondary">Subtle smoothing with Botox and dermal fillers.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card h-100">
+                <h5>Skin Renewal</h5>
+                <p class="text-secondary">Hydrafacial, peels, and glow-boosting protocols.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card h-100">
+                <h5>Body Contouring</h5>
+                <p class="text-secondary">Non-invasive sculpting tailored to your goals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="booking">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <h2 class="h3 fw-semibold">Ready to book?</h2>
+              <p class="text-secondary">
+                Our AI front desk can confirm availability, answer prep questions, and send reminders.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="cta-card">
+                <h5 class="fw-semibold">Booking Concierge</h5>
+                <p class="text-secondary mb-3">Tap to start a quick booking conversation.</p>
+                <button class="btn btn-primary w-100" type="button" id="ctaChat">
+                  Start AI Booking
+                </button>
+                <div class="mt-3 text-muted small">
+                  Or call <a href="tel:+15551234567">(555) 123-4567</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-strip">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <div>
+              <strong>"Best glow-up I have had in years."</strong>
+              <span class="text-muted">— Maya C.</span>
+            </div>
+            <div>
+              <strong>"Booking was instant with the AI desk."</strong>
+              <span class="text-muted">— Jordan P.</span>
+            </div>
+            <div>
+              <strong>"Calm space, real results."</strong>
+              <span class="text-muted">— Elise M.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light" id="faq">
+        <div class="container">
+          <h2 class="h3 fw-semibold mb-4">FAQ</h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                  Do you offer same-day appointments?
+                </button>
+              </h2>
+              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  Yes. The AI front desk can check availability and confirm same-day openings.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                  What should I do before my visit?
+                </button>
+              </h2>
+              <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  We will send prep instructions based on your service and confirm your intake forms.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                  Is the AI front desk always available?
+                </button>
+              </h2>
+              <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  Yes. It is available 24/7 for questions, booking, and follow-ups.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="chat-widget shadow" id="chatWidget" aria-live="polite">
+      <div class="chat-header">
+        <strong>Radiant AI Front Desk</strong>
+        <button class="btn-close" id="chatClose" aria-label="Close"></button>
+      </div>
+      <div class="chat-body">
+        <p class="text-secondary small mb-2">Hi! I can help you book a visit or answer questions.</p>
+        <div class="chat-bubble">What service are you interested in today?</div>
+      </div>
+      <div class="chat-footer">
+        <input class="form-control" type="text" placeholder="Type your message..." />
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </div>
+
+    <button class="chat-fab" id="chatFab" aria-label="Open chat">
+      <span>Chat</span>
+    </button>
+
+    <footer class="footer">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <span>Radiant Med Spa</span>
+        <span class="text-muted">Call (555) 123-4567 • hello@radiantmedspa.com</span>
+        <span class="text-muted">Powered by RevNexSystems</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
