@@ -35,8 +35,29 @@ body {
 
 .hero {
   padding: 90px 0 70px;
-  background: radial-gradient(circle at top left, #ffeaf2, #ffffff 60%),
-    linear-gradient(120deg, rgba(47, 196, 178, 0.08), rgba(255, 122, 162, 0.08));
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/hero-background.png") center/cover no-repeat;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-card {
