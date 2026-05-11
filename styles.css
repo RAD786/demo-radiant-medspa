@@ -87,6 +87,28 @@ body {
   border: 1px solid #f4dfea;
 }
 
+.sms-opt-in {
+  background: #ffffff;
+  border: 1px solid #f0e5ee;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 12px 28px rgba(31, 42, 68, 0.06);
+}
+
+.booking-form .form-label {
+  font-weight: 600;
+}
+
+.sms-consent {
+  padding-left: 1.75rem;
+}
+
+.sms-consent .form-check-label {
+  color: var(--spa-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
 .testimonial-strip {
   padding: 32px 0;
   background: linear-gradient(120deg, #fff1f6, #edf9ff);
@@ -98,6 +120,59 @@ body {
   padding: 24px 0;
   background: #ffffff;
   border-top: 1px solid #f0e6f2;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: var(--spa-ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: var(--spa-accent-dark);
+  text-decoration: underline;
+}
+
+.legal-hero {
+  padding: 72px 0 40px;
+  background: linear-gradient(120deg, #fff1f6, #edf9ff);
+  border-bottom: 1px solid #f0dce8;
+}
+
+.legal-content {
+  padding: 56px 0 80px;
+}
+
+.legal-card {
+  max-width: 860px;
+  background: #ffffff;
+  border: 1px solid #f0e5ee;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(31, 42, 68, 0.06);
+  padding: 34px;
+}
+
+.legal-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.legal-card h2:first-of-type {
+  margin-top: 0;
+}
+
+.legal-card p,
+.legal-card li {
+  color: var(--spa-muted);
+  line-height: 1.75;
 }
 
 .chat-widget {
@@ -180,5 +255,9 @@ body {
   .chat-fab {
     right: 16px;
     bottom: 16px;
+  }
+
+  .legal-card {
+    padding: 24px;
   }
 }
